@@ -14,13 +14,65 @@
     },
     {
         "id": 2,
-        "title": "VueDo",
-        "description": "My first Vue.js todo app",
+        "title": "VueGiph",
+        "description": "Giphy API",
+        "website": "",
+        "tags": ["Vue", "Axios"],
+        "images": ["vuedo.png"],
+        "date": "2021",
+        "demo": "vue-giph",
+        "links": {
+            "github": ""
+        }
+    },
+    {
+        "id": 3,
+        "title": "REST Countries App",
+        "description": "REST Countries API",
         "website": "",
         "tags": ["Vue"],
         "images": ["vuedo.png"],
         "date": "2021",
-        "demo": "vue-do",
+        "demo": "",
+        "links": {
+            "github": ""
+        }
+    },
+    {
+        "id": 4,
+        "title": "Festivals App",
+        "description": "Festivals API",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuedo.png"],
+        "date": "2021",
+        "demo": "",
+        "links": {
+            "github": ""
+        }
+    },
+    {
+        "id": 5,
+        "title": "Person Greeter",
+        "description": "Helloooooooo",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuedo.png"],
+        "date": "2021",
+        "demo": "",
+        "links": {
+            "github": ""
+        }
+    },
+    {
+        "id": 6,
+        "title": "CA2",
+        "description": "FED Assignment 2",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuedo.png"],
+        "date": "2021",
+        "demo": "",
         "links": {
             "github": ""
         }
