@@ -1,6 +1,6 @@
 <template>
-  <div class="columns">
-    <div class="column">
+  <div class="columns is-mobile">
+    <div class="column is-half is-offset-one-quarter">
 
       <b-field label="Search Projects">
         <b-input v-model="searchTerm"></b-input>
@@ -9,7 +9,7 @@
       <div class="card" v-for="project in filteredProjects" :key="project.id">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            <img :src="require('@/assets/images/' + project.image)" alt="Placeholder image">
           </figure>
         </div>
         <div class="card-content">
@@ -30,6 +30,7 @@
             {{ project.description }}
             <br>
             <router-link v-if="project.demo" :to="{name: project.demo}">Demo</router-link>
+            <a v-if="project.website" :href="project.website" target="_blank">Hosted Site</a>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@
         "description": "My first Vue.js todo app",
         "website": "",
         "tags": ["Vue"],
-        "images": ["vuedo.png"],
+        "image": "vuedo.png",
         "date": "2021",
         "demo": "vue-do",
         "links": {
@@ -18,7 +18,7 @@
         "description": "Giphy API",
         "website": "",
         "tags": ["Vue", "Axios"],
-        "images": ["vuedo.png"],
+        "image": "vuegiph.png",
         "date": "2021",
         "demo": "vue-giph",
         "links": {
@@ -29,9 +29,9 @@
         "id": 3,
         "title": "REST Countries App",
         "description": "REST Countries API",
-        "website": "",
-        "tags": ["Vue"],
-        "images": ["vuedo.png"],
+        "website": "https://fed-ca1---jade-kelly.web.app",
+        "tags": ["Vue", "Axios", "BootstrapVue"],
+        "image": "vuecountries.png",
         "date": "2021",
         "demo": "",
         "links": {
@@ -40,37 +40,11 @@
     },
     {
         "id": 4,
-        "title": "Festivals App",
-        "description": "Festivals API",
-        "website": "",
-        "tags": ["Vue"],
-        "images": ["vuedo.png"],
-        "date": "2021",
-        "demo": "",
-        "links": {
-            "github": ""
-        }
-    },
-    {
-        "id": 5,
-        "title": "Person Greeter",
-        "description": "Helloooooooo",
-        "website": "",
-        "tags": ["Vue"],
-        "images": ["vuedo.png"],
-        "date": "2021",
-        "demo": "",
-        "links": {
-            "github": ""
-        }
-    },
-    {
-        "id": 6,
-        "title": "CA2",
-        "description": "FED Assignment 2",
-        "website": "",
-        "tags": ["Vue"],
-        "images": ["vuedo.png"],
+        "title": "College App",
+        "description": "College API",
+        "website": "https://fed-college-ca2-jade-kelly.web.app",
+        "tags": ["Vue", "Axios", "Vuex", "Buefy"],
+        "image": "vuecollege.png",
         "date": "2021",
         "demo": "",
         "links": {

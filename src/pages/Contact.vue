@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is my contact page
+    <a href="https://ie.linkedin.com/in/jade-kelly-0b526b209">LinkedIn</a>
   </div>
 </template>
 
