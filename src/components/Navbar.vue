@@ -1,9 +1,16 @@
 <template>
   <div>
-      <router-link :to="{name: 'home'}">Home</router-link> |
-      <router-link :to="{name: 'about'}">About</router-link> |
-      <router-link :to="{name: 'contact'}">Contact</router-link> |
-      <router-link :to="{name: 'projects'}">Projects</router-link>
+    <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar-brand style="color: #17a2b8;" :to="{name: 'home'}">JK PORTFOLIO</b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item :to="{name: 'projects'}">Projects</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 

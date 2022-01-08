@@ -1,40 +1,43 @@
 <template>
-  <div class="columns is-mobile">
-    <div class="column is-half is-offset-one-quarter">
+  <div>
+    <h1 style="text-align: center;">Projects</h1>
+    <br>
+    <b-row align-h="center">
+      <b-col lg="2" md="8" sm="10">
+        <label for="search">
+          <h3>
+            <b-badge variant="info">Search Projects :</b-badge>
+          </h3>
+        </label>
+      </b-col>
+      <b-col lg="4" md="8" sm="10">
+        <b-form-input id="search" v-model="searchTerm"></b-form-input>
+      </b-col>
+    </b-row>
 
-      <b-field label="Search Projects">
-        <b-input v-model="searchTerm"></b-input>
-      </b-field>
+    <br>
 
-      <div class="card" v-for="project in filteredProjects" :key="project.id">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img :src="require('@/assets/images/' + project.image)" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4">{{ project.title }}</p>
-              <p class="subtitle">
-                <b-taglist>
-                  <b-tag type="is-dark"
-                  v-for="tag in project.tags"
-                  :key="tag"
-                  >{{ tag }}</b-tag>
-                </b-taglist>
-              </p>
-            </div>
-          </div>
-          <div class="content">
-            {{ project.description }}
-            <br>
-            <router-link v-if="project.demo" :to="{name: project.demo}">Demo</router-link>
-            <a v-if="project.website" :href="project.website" target="_blank">Hosted Site</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <b-row align-h="center" v-for="project in filteredProjects" :key="project.id">
+      <b-col lg="6" md="8" sm="10">
+        <b-card no-body border-variant="dark" :header="project.title" header-text-variant="white"
+          header-bg-variant="dark" footer-bg-variant="dark">
+          <b-card-body>
+            <b-card-img :src="require('@/assets/images/' + project.image)"></b-card-img>
+          </b-card-body>
+          <b-list-group flush>
+            <b-list-group-item>
+              <p>{{project.description}}</p>
+              <b-button v-if="project.demo" :to="{name: project.demo}" variant="info">Demo</b-button>
+              <b-button v-if="project.website" :href="project.website" target="_blank" variant="info">Hosted Site
+              </b-button>
+            </b-list-group-item>
+          </b-list-group>
+          <template #footer>
+            <b-badge v-for="tag in project.tags" :key="tag" variant="info">{{ tag }}</b-badge>
+          </template>
+        </b-card>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
