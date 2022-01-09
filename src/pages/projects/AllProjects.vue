@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1 style="text-align: center;">Projects</h1>
     <br>
-    <b-row align-h="center">
+    <h1 style="text-align: center; background-color:#343a40; color: white;">Projects</h1>
+    <b-container>
+    <div v-if="projects">
+      <b-row align-h="center">
       <b-col lg="2" md="8" sm="10">
         <label for="search">
           <h3>
@@ -38,6 +40,11 @@
         </b-card>
       </b-col>
     </b-row>
+    </div>
+    <div v-else>
+      <b-spinner variant="primary" label="Spinning"></b-spinner>
+    </div>
+    </b-container>
   </div>
 </template>
 
